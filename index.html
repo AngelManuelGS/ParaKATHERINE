@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>💖 Tengo algo que preguntarte 💖</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
+    <!-- Audio de fondo -->
+    <audio id="bgMusic" loop>
+      <source src="assets/gifs/José Madero Plural Siendo Singular.mp3" type="audio/mpeg" />
+    </audio>
+    <!-- PANTALLA DE INICIO CON CORTINAS -->
+    <div id="intro">
+      <div class="curtain left"></div>
+      <div class="curtain right"></div>
+ 
+      <div class="intro-content">
+        <h1>💖 Hola 💖</h1>
+        <p>Toca la pantalla para comenzar</p>
+      </div>
+    </div>
+
+    <main id="app">
+      <!-- ESCENA 1 -->
+      <section class="scene" id="scene-1">
+        <img src="assets/gifs/bugcat-capoo.gif" class="gif">
+        <h1 class="typing">Hola…</h1>
+        <p class="fade-in delay-2">Tengo algo importante que decirte</p>
+        <button class="btn next">Continuar 💌</button>
+      </section>
+
+      <!-- ESCENA 2 -->
+      <section class="scene" id="scene-2">
+        <img src="assets/gifs/giphy (3)9.gif" class="gif" />
+        <p class="fade-in">Desde que estamos hablando nuevamente, me la paso bien contigo...</p>
+        <p class="fade-in delay-2">mis días son un poco mejores 💕</p>
+        <button class="btn next">Siguiente</button>
+      </section>
+
+      <!-- ESCENA 3 -->
+      <section class="scene" id="scene-3">
+        <img src="assets/gifs/capoo-bugcat.gif" class="gif">
+        <p class="typing">Y queria decirte si este 14 de febrero…</p>
+        <div class="countdown" id="countdown">3</div>
+      </section>
+
+      <!-- ESCENA 4 -->
+      <section class="scene" id="scene-4">
+        <img src="assets/gifs/giphy (2).gif" class="gif" />
+        <h2>¿Te gustaría salir conmigo?</h2>
+        <p>Este 14 de febrero 💖</p>
+
+        <div class="buttons">
+          <button class="btn yes" id="yesBtn">Sí 💘</button>
+          <button class="btn no" id="noBtn">No 💔</button>
+        </div>
+      </section>
+
+      <!-- ESCENA 5 - SI -->
+      <!-- ESCENA 5 - ELEGIR PLAN -->
+<section class="scene" id="scene-plan">
+    <img src="assets/gifs/bugcat-capoo 8.gif" class="gif">
+    <h1>💖 Perfecto 💖</h1>
+    <p>Ahora elige nuestro plan:</p>
+
+    <div class="buttons">
+        <button class="btn plan" data-plan="A">
+            ☕ Plan A<br>
+            Cafetería → Bar
+        </button>
+
+        <button class="btn plan" data-plan="B">
+            🍽️ Plan B<br>
+            Restaurante → Bar
+        </button>
+    </div> 
+</section>
+
+<!-- ESCENA 6 - MENSAJE FINAL -->
+<section class="scene" id="scene-final">
+    <img src="assets/gifs/giphy.gif" class="gif">
+    <h1>✨ Perfecto ✨</h1>
+    <p class="final-text">
+        Ok, ponte bonita y paso por ti a las <strong>8:30 pm</strong> 💖
+    </p>
+</section>
+
+    </main>
+
+    <script src="js/main.js"></script>
+    <script src="js/buttons.js"></script>
+  </body>
+</html>
